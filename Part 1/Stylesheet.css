@@ -5,32 +5,34 @@ body {
 
   }
   
+  /* This line of code adds dotted border and the colors to h1 tags in html document*/
   h1 {
     color: hotpink;
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
     border-bottom: 10px dotted purple;
   }
-  
+  /* This line of code adds italics to h2 tags in html document */
   h2 {
     font-style: italic;
     font-size: 1.5em;
   }
-  
+  /* This modifies tags that have a class equivalent to job-title */
   .job-title {
     color: #999999;
     font-weight: bold;
   }
-  
+  /* This modifies anchor tag's links to have a color and remain the same color if the link was used or visited  */
   a:link,
   a:visited {
     color: #fb6542;
   }
-  
+  /* This allows links to change color when the mouse hovers over the links */
   a:hover {
     text-decoration: none;
     color: green;
   }
+  /* This modifies the unordered lists to have a background color, border and padding */
   ul{
     background-color: #eeeeee;
     border: 5px purple solid;
