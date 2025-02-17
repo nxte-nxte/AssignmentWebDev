@@ -2,16 +2,18 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+
   }
   
   h1 {
-    color: #BF40BF;
+    color: hotpink;
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
-    border-bottom: 9px dotted #375e97;
+    border-bottom: 10px dotted purple;
   }
   
   h2 {
+    font-style: italic;
     font-size: 1.5em;
   }
   
@@ -27,6 +29,12 @@ body {
   
   a:hover {
     text-decoration: none;
+    color: green;
+  }
+  ul{
+    background-color: #eeeeee;
+    border: 5px purple solid;
+    padding: 2em;
   }
 
   
