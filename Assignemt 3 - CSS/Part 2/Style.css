@@ -6,16 +6,26 @@ html {
   
   .Box
       {
+      /* Setting box dimensions and background color */
       background-color: red;
       width: 200px;
       margin: auto;
+      /* line-height: 9px; */
       /* Border design */
       border: 2px solid #a00404;
       border-radius: 10px;
-      
+      border-color: red;
+
       justify-content: center;
       align-items: center;
-      p{
+
+      /* Modifying background */
+
+
+
+
+      /* Modifying Paragraph */
+      p {
         color: aliceblue;
         font-size: 17px;
         text-align: center;
