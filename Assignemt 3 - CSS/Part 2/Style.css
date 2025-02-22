@@ -17,8 +17,9 @@ html {
       border-radius: 10px;
       border-color: red;
 
-      justify-content: center;
-      align-items: center;
+      display: flex; /* Added Flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
 
       /* Modifying background */
       background-image: linear-gradient(
