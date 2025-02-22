@@ -16,14 +16,14 @@ html {
       border-radius: 10px;
       border-color: red;
 
-      justify-content: center;
-      align-items: center;
-
       /* Modifying background */
-
-
-
-
+      background-image: linear-gradient(
+        to top left,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0)
+      );
+      
       /* Modifying Paragraph */
       p {
         color: aliceblue;
