@@ -6,10 +6,11 @@ html {
   
   .Box
       {
-      background-color: hotpink;
+      background-color: red;
       width: 200px;
-      height: 200px;
-      border: 2px solid purple;
+      margin: auto;
+      
+      border: 2px solid #a00404;
       justify-content: center;
       align-items: center;
       p{
