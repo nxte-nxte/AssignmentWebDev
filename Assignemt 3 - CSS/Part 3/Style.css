@@ -44,6 +44,8 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
+  /* Working on Navigation Bar */
+
   nav li {
     list-style-type: 0px;
     margin-top: 0.8rem;
@@ -60,4 +62,15 @@
     border: 1px solid #a66;
     font-size: 2.5rem;
     line-height: 3;
+  }
+
+  nav li a:focus, nav li a:hover{
+    color: white;
+    background: #a66;
+
+  }
+
+  nav li a:active{
+    color:white;
+    background:black;
   }
