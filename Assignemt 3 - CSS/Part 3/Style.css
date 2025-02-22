@@ -43,3 +43,20 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  nav li {
+    list-style-type: 0px;
+    margin-top: 0.8rem;
+  }
+  nav ul {
+     padding-left: 0px;
+     margin-top: 0.8rem;
+  }
+  nav li a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border: 1px solid #a66;
+    
+  }
