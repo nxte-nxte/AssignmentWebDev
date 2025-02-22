@@ -5,16 +5,14 @@ html {
   /* Your CSS below here */
   
   .Box
-  {
-  background-color: hotpink;
-  width: 200px;
-  height: 200px;
-  border: 2px solid purple;
-  justify-content: center;
-  align-items: center;
-  }
- p{
-  text-align: center;
-  
-  ;
- }
+      {
+      background-color: hotpink;
+      width: 200px;
+      height: 200px;
+      border: 2px solid purple;
+      justify-content: center;
+      align-items: center;
+      p{
+        text-align: center;
+      }
+}
