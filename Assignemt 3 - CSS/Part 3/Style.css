@@ -56,7 +56,8 @@
     text-decoration: none;
     width: 100%;
     text-align: center;
-    display: block;
+    display: inline-block;
     border: 1px solid #a66;
-    
+    font-size: 2.5rem;
+    line-height: 3;
   }
