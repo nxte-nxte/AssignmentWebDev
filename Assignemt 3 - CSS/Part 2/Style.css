@@ -9,11 +9,15 @@ html {
       background-color: red;
       width: 200px;
       margin: auto;
-      
+      /* Border design */
       border: 2px solid #a00404;
+      border-radius: 10px;
+      
       justify-content: center;
       align-items: center;
       p{
+        color: aliceblue;
+        font-size: 17px;
         text-align: center;
       }
 }
