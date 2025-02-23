@@ -1,3 +1,6 @@
+/* NAME: NATHAN BETTON 100948437
+PART 3 ASSIGNMENT 3 */
+
 /* General setup */
 
 * {
@@ -44,16 +47,18 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
-  /* Working on Navigation Bar */
+  /* This sets list in the navigation bar to without bullet points*/
 
   nav li {
     list-style-type: none;
     margin-top: 0.8rem;
   }
+  /* Removes any padding on the left side of the element and adds top margin*/
   nav ul {
      padding-left: 0px;
      margin-top: 0.8rem;
   }
+  /* Modifies links in navigation bar*/
   nav li a {
     text-decoration: none;
     width: 100%;
@@ -63,13 +68,13 @@
     font-size: 2.5rem;
     line-height: 3;
   }
-
+  /* Changes navigation list with anchor tags */
   nav li a:focus, nav li a:hover{
     color: white;
     background: #a66;
 
   }
-
+  /* Changes navigation list anchor tag links to white when active */
   nav li a:active{
     color:white;
     background:black;
@@ -98,16 +103,16 @@
     background: url(external-link-52.png) no-repeat 100% 0;
     background-size: 16px 16px;
   }
-
+  /*Changes anchor tag to different colours when visitied  */
   a:link, a:visited {
     color: #a66;
     text-decoration: none;
   }
-
+  /*Changes anchor tag to different colours when the mouse hovers over them  */
   a:focus, a:hover {
     text-decoration: none;
   }
-
+  /*Changes anchor tag to different colours when active  */
   a:active {
     color:transparent;
     text-shadow:    0px 0px 1px #f00,
@@ -117,7 +122,7 @@
 
   }
 
-
+  /* Styling the header */
   html {
     font-family: lovatolight, serif;
     font-size: 10px;
@@ -136,11 +141,11 @@
   h2 {
     font-size: 3.2rem;
   }
-  
+  /* indents h2 and paragraph tags inside section tag */
   section h2 + p {
     text-indent: 20px;
   }
-  
+  /* Styles the p and list tags */
   p, li {
     font-size: 1.6rem;
     line-height: 1.5;
