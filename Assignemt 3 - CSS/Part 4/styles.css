@@ -1,15 +1,21 @@
-body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+/*NAME: NATHAN BETTON 100948437  
+PART 4 ASSIGNMENT 3*/
 
+  /* This adds color and resets default margins to the body of the html*/
+  body {
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    }
+    
+  /*This sets the image size*/
   img {
       max-width: 100%;
       display: block;
   }
-  
+
+  /*This sets the logo*/
   .logo {
     font-size: 200%;
     padding: 50px 20px;
@@ -26,6 +32,7 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
   }
+
   /*Modifying nav to make navigation bar stay fixed at the top of the webpage*/
   nav {
     background-color: #000;
@@ -33,6 +40,7 @@ body {
     top: 0;
     position: sticky;    
   }
+
   /*Modifying navigation bar menu to be centered and spaced out */
   nav ul {
     margin: 0;
@@ -41,12 +49,14 @@ body {
     display:flex;
     justify-content: space-between;
   }
-  
+
+  /* Modifies heading in the navigation bar */
   nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
   }
+
   /* Organized the photo as a small grid*/
   .photos {
     list-style: none;
@@ -56,6 +66,7 @@ body {
     gap: 1px;
     grid-template-columns: 1fr 1fr;
   }
+
   /* This pushes the image tag to the left of the webpage and allows content to be placed beside it */
   .feature {
       width: 200px;
