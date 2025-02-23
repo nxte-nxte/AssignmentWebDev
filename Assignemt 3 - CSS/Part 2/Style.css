@@ -5,7 +5,7 @@ html {
   /* Your CSS below here */
   
   .Box
-      {
+    {
       /* Setting box dimensions and background color */
       background-color: red;
       width: 200px;
@@ -29,11 +29,11 @@ html {
         rgba(0, 0, 0, 0)
       );
       
-      /* Modifying Paragraph */
-      p {
+    }
+    /*Modifies paragraph tag  */
+  .Box p
+    { 
         color: aliceblue;
         font-size: 17px;
-        text-align: center;
-      
-      }
-}
+        text-align: center;      
+    }
