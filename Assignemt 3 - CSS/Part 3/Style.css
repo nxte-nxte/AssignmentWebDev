@@ -124,12 +124,12 @@ PART 3 ASSIGNMENT 3 */
 
   /* Styling the header */
   html {
-    font-family: lovatolight, serif;
+    font-family: OpenSans, serif;
     font-size: 10px;
   }
   
   h1, h2 {
-    font-family: josefin_slabbold, sans-serif;
+    font-family: Roboto, sans-serif;
     letter-spacing: 2px;
   }
   
@@ -155,26 +155,20 @@ PART 3 ASSIGNMENT 3 */
   
 
   /* Importing fonts */
-  @font-face {
-    font-family: 'lovatolight';
-    src: url('fonts/Lovato-Light-webfont.eot');
-    src: url('fonts/Lovato-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Lovato-Light-webfont.woff2') format('woff2'),
-         url('fonts/Lovato-Light-webfont.woff') format('woff'),
-         url('fonts/Lovato-Light-webfont.ttf') format('truetype'),
-         url('fonts/Lovato-Light-webfont.svg#lovatolight') format('svg');
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('Fonts/OpenSans-Regular.ttf') format('truetype');
+        
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'josefin_slabbold';
-    src: url('fonts/josefinslab-bold-webfont.eot');
-    src: url('fonts/josefinslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/josefinslab-bold-webfont.woff2') format('woff2'),
-         url('fonts/josefinslab-bold-webfont.woff') format('woff'),
-         url('fonts/josefinslab-bold-webfont.ttf') format('truetype'),
-         url('fonts/josefinslab-bold-webfont.svg#josefin_slabbold') format('svg');
+    font-family: 'roboto';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
