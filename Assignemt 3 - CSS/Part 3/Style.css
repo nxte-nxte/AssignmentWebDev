@@ -47,7 +47,7 @@
   /* Working on Navigation Bar */
 
   nav li {
-    list-style-type: 0px;
+    list-style-type: none;
     margin-top: 0.8rem;
   }
   nav ul {
