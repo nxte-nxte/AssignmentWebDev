@@ -26,16 +26,20 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
   }
-  
+  /*Modifying nav to make navigation bar stay fixed at the top of the webpage*/
   nav {
     background-color: #000;
     padding: .5em;
+    top: 0;
+    position: sticky;    
   }
-  
+  /*Modifying navigation bar menu to be centered and spaced out */
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display:flex;
+    justify-content: space-between;
   }
   
   nav a {
