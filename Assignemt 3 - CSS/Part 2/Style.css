@@ -1,5 +1,5 @@
 /* NAME: NATHAN BETTON 100948437
- PART 2 ASSIGNMENT 3  */
+ PART 2 ASSIGNMENT 3*/
 
 html {
     font-family: sans-serif;
@@ -12,13 +12,13 @@ html {
       /* Setting box dimensions and background color */
       background-color: red;
       width: 200px;
-      height: 100px;
       margin: auto;
-      /* line-height: 9px; */
+      line-height: 9;
+      text-shadow: 1px 1px 1px black;
+
       /* Border design */
       border: 2px solid #a00404;
       border-radius: 10px;
-      border-color: red;
 
       display: flex; /* Added Flexbox */
       justify-content: center; /* Center horizontally */
@@ -31,12 +31,15 @@ html {
         rgba(0, 0, 0, 0.2) 30%,
         rgba(0, 0, 0, 0)
       );
+
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6), 2px 2px 5px black;
       
     }
     /*Modifies paragraph tag  */
   .Box p
     { 
-        color: aliceblue;
+        color: white;
         font-size: 17px;
         text-align: center;      
     }
