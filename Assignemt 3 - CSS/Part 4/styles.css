@@ -56,7 +56,9 @@ body {
     gap: 1px;
     grid-template-columns: 1fr 1fr;
   }
-  /*  */
+  /* This pushes the image tag to the left of the webpage and allows content to be placed beside it */
   .feature {
       width: 200px;
+      float: left;
+      margin: 0 20px 20px 0;
   }
