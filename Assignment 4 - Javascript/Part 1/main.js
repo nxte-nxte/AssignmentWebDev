@@ -24,6 +24,14 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+    let newStory = storyText;
+    
+    // Generate a random story
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
+
+
   if(customName.value !== '') {
     const name = customName.value;
 
