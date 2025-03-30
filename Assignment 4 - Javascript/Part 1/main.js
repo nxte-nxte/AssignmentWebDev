@@ -1,3 +1,9 @@
+/*
+NAME: NATHAN C. BETTON
+DATE: 2025-03-29
+DESCRIPTION: This is a Mad Libs style program that generates a random story based on user input. The user can enter their name and select a unit system (US or UK) to modify the story accordingly.
+*/ 
+
 // 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
