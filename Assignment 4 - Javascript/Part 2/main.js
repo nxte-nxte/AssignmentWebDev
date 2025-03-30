@@ -1,3 +1,18 @@
+/*
+ 
+ NAME: Nathan C. Betton
+ DATE: 2025-03-30
+ DESCRIPTION: Complete the image gallery example by adding the JavaScript code to make the images in the thumbnail bar clickable. 
+              When clicked, the image should display in the full-image area. 
+              The darken button should darken the full-image area when clicked.
+
+
+
+*/
+
+
+
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
