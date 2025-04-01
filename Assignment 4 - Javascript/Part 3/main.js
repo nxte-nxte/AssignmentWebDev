@@ -38,7 +38,20 @@ class Ball{
   }
 
   // This function will tell the ball to update its position
- 
+  update() {
+    this.x += this.velX;
+    this.y += this.velY;
+
+    // If the ball goes off the screen, reverse its velocity
+    if (this.x + this.size > width || this.x - this.size < 0) {
+      this.velX = -this.velX;
+    }
+
+    if (this.y + this.size > height || this.y - this.size < 0) {
+      this.velY = -this.velY;
+    }
+  }
+
 }
 
 
