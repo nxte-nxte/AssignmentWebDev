@@ -18,7 +18,7 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-
+// Create a class for ball
 class Ball{
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
@@ -27,5 +27,20 @@ class Ball{
     this.velY = velY;
     this.color = color;
     this.size = size;
+
+  }
+    // This function will tell the ball to draw itself on the screen
+  draw() {
+    ctx.beginPath();
+    ctx.fillStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+
+  // This function will tell the ball to update its position
+ 
 }
+
+
+
 
