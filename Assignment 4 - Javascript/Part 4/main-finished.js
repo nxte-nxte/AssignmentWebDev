@@ -89,7 +89,7 @@ class Ball extends Shape {
 
 class EvilCircle extends Shape {
   constructor(x,y){
-    super(x, y, 0, 0, "White", 10);
+    super(x, y, 0, 0);
     this. velX = 20;
     this.velY = 20;
   }
@@ -139,6 +139,25 @@ class EvilCircle extends Shape {
         }
       }
     }
+
+    setControls() {
+      window.onkeydown = (e) => {
+        switch (e.key) {
+          case "a":
+            this.x -= this.velX;
+            break;
+          case "d":
+            this.x += this.velX;
+            break;
+          case "w":
+            this.y -= this.velY;
+            break;
+          case "s":
+            this.y += this.velY;
+            break;
+        }
+      };
+    }
 }
 
 
@@ -171,18 +190,18 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+
     if (!ball.exists) {
+      ball.draw();
+      ball.update();
+    }
       EvilCircle.draw();
       EvilCircle.update();
       EvilCircle.collisionDetect();
-    }
-    
+      requestAnimationFrame(loop);
   }
 
-  requestAnimationFrame(loop);
+  
 }
 
 loop();
