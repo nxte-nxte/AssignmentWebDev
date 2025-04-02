@@ -92,12 +92,11 @@ class EvilCircle extends Shape {
     super(x, y, 0, 0);
     this. velX = 20;
     this.velY = 20;
+    this.color = 'white';
+    this.size = 10;
   }
 
   draw() {
-    if (!this.exists) {
-      return;
-    }
     ctx.beginPath();
     ctx.lineWidth = 3;
     ctx.strokeStyle = this.color;
@@ -105,9 +104,7 @@ class EvilCircle extends Shape {
     ctx.stroke();
   }
   checkBounds() {
-    if (!this.exists) {
-      return;
-    }
+
     if (this.x + this.size >= width) {
       this.velX = -Math.abs(this.velX);
     }
@@ -162,6 +159,7 @@ class EvilCircle extends Shape {
 
 
 const balls = [];
+let count = 0;
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -200,8 +198,7 @@ function loop() {
       EvilCircle.collisionDetect();
       requestAnimationFrame(loop);
   }
-
-  
+ 
 }
 
 loop();
