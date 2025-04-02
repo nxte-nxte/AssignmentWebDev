@@ -59,6 +59,21 @@ class Ball{
     this.y += this.velY;
 
   }
+// Checks if the ball has collided with each other. If so, the ball changes color
+  collisionDetect() {
+    for (const ball of balls) {
+      if (this !== ball) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+  
+        if (distance < this.size + ball.size) {
+          ball.color = this.color = randomRGB();
+        }
+      }
+    }
+  }
+  
 
 }
 // Amimates the ball
