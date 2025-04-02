@@ -1,3 +1,11 @@
+/* 
+ name: Nathan C. Betton
+  date: 2025-04-02
+  description: Create a simple HTML5 canvas application that draws a ball on the screen. 
+  The ball should move randomly across the canvas, bounce off walls, and change color when clicked. 
+  The application should also include a button that resets the ball's position and color.
+ */
+
 html, body {
   margin: 0;
 }
