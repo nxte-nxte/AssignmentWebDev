@@ -61,7 +61,7 @@ class Ball{
   }
 
 }
-// Amimate the ball
+// Amimates the ball
 const balls = [];
 
 while (balls.length < 25) {
@@ -93,4 +93,5 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
+loop();
 
