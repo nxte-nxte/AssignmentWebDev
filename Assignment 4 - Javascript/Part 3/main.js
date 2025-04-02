@@ -73,8 +73,6 @@ class Ball{
       }
     }
   }
-  
-
 }
 // Amimates the ball
 const balls = [];
@@ -101,8 +99,10 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
+    // Function calls
     ball.draw();
     ball.update();
+    ball.collisionDetect(); 
   }
 
   requestAnimationFrame(loop);
