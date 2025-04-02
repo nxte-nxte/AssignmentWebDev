@@ -167,6 +167,12 @@ function loop() {
     ball.draw();
     ball.update();
     ball.collisionDetect();
+    if (!ball.exists) {
+      EvilCircle.draw();
+      EvilCircle.update();
+      EvilCircle.collisionDetect();
+    }
+    
   }
 
   requestAnimationFrame(loop);
