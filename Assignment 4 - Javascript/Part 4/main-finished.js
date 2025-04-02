@@ -157,6 +157,11 @@ class EvilCircle extends Shape {
     }
 }
 
+const para = document.createElement("p");
+para.style.position = "absolute";
+para.style.margin = "10px";
+para.style.color = "white";
+document.body.appendChild(para);
 
 const balls = [];
 let count = 0;
@@ -175,7 +180,10 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
 }
+
+para.textContent = `Number of Balls: ${count}`;
 
 const evilCircle = new EvilCircle(
   random(0, width),
@@ -188,16 +196,16 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-
-    if (!ball.exists) {
       ball.draw();
       ball.update();
-    }
-      EvilCircle.draw();
-      EvilCircle.update();
-      EvilCircle.collisionDetect();
-      requestAnimationFrame(loop);
+      ball.collisionDetect();
   }
+      evilCircle.draw();
+      evilCircle.checkBounds();
+      evilCircle.collisionDetect();
+      para.textContent = `Number of Balls: ${count}`;
+
+      requestAnimationFrame(loop);
  
 }
 
