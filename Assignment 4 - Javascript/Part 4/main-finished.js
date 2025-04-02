@@ -38,9 +38,9 @@ class Ball extends Shape {
   }
 
   draw() {
-    // if (!this.exists) {
-    //   return;
-    // }
+    if (!this.exists) {
+      return;
+    }
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
@@ -48,9 +48,9 @@ class Ball extends Shape {
   }
 
   update() {
-    // if (!this.exists) {
-    //   return;
-    // }
+    if (!this.exists) {
+      return;
+    }
     if (this.x + this.size >= width) {
       this.velX = -Math.abs(this.velX);
     }
@@ -94,6 +94,17 @@ class EvilCircle extends Shape {
     this.velY = 20;
   }
 
+  draw() {
+    if (!this.exists) {
+      return;
+    }
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.stroke();
+  }
+
+ 
 }
 
 
