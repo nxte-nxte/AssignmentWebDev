@@ -46,7 +46,7 @@ p, li, table, figcaption{
 
 /* || header layout */
 
-header,nav, article, footer, .secondary {
+nav, article, footer, .secondary {
   background-color: white;
 }
 
@@ -85,9 +85,15 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  padding: 10px
 }
 
-.search {
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+  background-color: rgba(0,0,0,0.1);
+}
+/* Added nav tag */
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -103,13 +109,14 @@ nav a {
 .search input[type="search"] {
   flex: 3;
 }
-
+/* added cursor pointer */
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
   background: #333;
   border: 0;
   color: white;
+  cursor: pointer;
 }
 
 /* || main layout */
@@ -129,6 +136,8 @@ article {
 footer {
   margin-top: 10px;
 }
+
+
 
 /* Table styling */
 
@@ -175,33 +184,36 @@ audio {
 .show-hide {
   cursor: pointer;
 }
-
-.comments font[size="6"] {
+/* Changed to h3 tag */
+.comments h3{
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
+.comments h3:nth-of-type(2) {
   margin-bottom: 0;
 }
 
 .comment-form {
   margin-bottom: 3rem;
 }
-
+/* Added align-items */
 .comment-form .flex-pair {
   display: flex;
   padding: 0 3rem 1rem;
+  align-items: center;
 }
 
 .comment-form label {
-  align-self: center;
   flex: 2;
   text-align: right;
 }
-
+/* Added border-radius and border */
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
 }
 
 .show-hide {
