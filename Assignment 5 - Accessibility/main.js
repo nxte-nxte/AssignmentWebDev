@@ -1,3 +1,9 @@
+// // NAME: NATHAN C. BETTON
+// DATE: 2025-04-09
+// DESCRIPTION: This is the HTML file for the accessibility assessment. It includes semantic HTML elements, ARIA roles, and other accessibility features. 
+// The code has been modified to improve accessibility and follows best practices for web development.
+
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
